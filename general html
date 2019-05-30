@@ -1,0 +1,111 @@
+<html> <head> <title>Online Exam</title>
+ <script type="text/javascript"> 
+ function handleClick() 
+ { var amountCorrect = 0; 
+ for(var i = 1; i <= 50; i++) 
+ { var radios = document.getElementsByName('group'+i);
+ for(var j = 0; j < radios.length; j++) 
+ { var radio = radios[j]; 
+ if(radio.value == "correct" && radio.checked) { amountCorrect++; } } } alert("Correct Responses: " + amountCorrect);
+ } 
+ </script>
+ </head> 
+ <body> 
+ <form name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false">
+ 
+ 
+ <ul><div class="question"> <b> 1) which animal is an mamal but lays egg ?? </b> </div> <br> 
+ <input id="answer" type="radio" name="group1" value="correct"> platypus <br> 
+ <input id="answer" type="radio" name="group1" value="wrong"> Dinousourous <br>
+ <input id="answer" type="radio" name="group1" value="wrong"> Amebia <br> 
+ <input id="answer" type="radio" name="group1" value="wrong"> Hydra Vulgaris <br> <br> <br> 
+ </ul>
+ 
+ <ul> <div class="question"> <b> 2) Which is The world's largest and deepest Ocean ??? </b> </div> <br>
+ 
+ <input id="answer" type="radio" name="group2" value="wrong">  Bay of Bengal <br> 
+ <input id="answer" type="radio" name="group2" value="correct"> Pacific Ocean <br>
+ <input id="answer" type="radio" name="group2" value="wrong"> Atlantic Ocean <br>
+ <input id="answer" type="radio" name="group2" value="wrong"> Indian Ocean <br> <br> <br>
+ 
+ </ul>
+ 
+ <ul><div class="question"> <b> 3) Which is the smallest country ?? </b> </div> <br>
+ <input id="answer" type="radio" name="group3" value="correct">Vatican City<br> 
+ <input id="answer" type="radio" name="group3" value="wrong"> Monaco <br>
+ <input id="answer" type="radio" name="group3" value="wrong"> Malta <br>
+ <input id="answer" type="radio" name="group3" value="wrong" > Maldives <br> <br> <br>
+ </ul>
+ 
+ 
+ <ul><div class="question"> <b> 4) Which is the largest country ??? </b> </div> <br>
+ 
+ <input id="answer" type="radio" name="group4" value="wrong"> Canada <br>
+ <input id="answer" type="radio" name="group4" value="wrong">  America <br>
+ <input id="answer" type="radio" name="group4" value="correct"> Russia <br> 
+ <input id="answer" type="radio" name="group4" value="wrong" > West Indies <br> <br> <br>
+ </ul>
+ 
+ 
+ 
+ <ul><div class="question"> <b> 5) What is the largest mammal of the world ??? </b> </div> <br>
+ <input id="answer" type="radio" name="group5" value="wrong"> Elephant <br> 
+ <input id="answer" type="radio" name="group5" value="wrong"> Yak <br>
+ <input id="answer" type="radio" name="group5" value="wrong"> Whale <br>
+ <input id="answer" type="radio" name="group5" value="correct" > Blue whale <br> <br> <br>
+ </ul>
+ 
+ <ul><div class="question"> <b> 6) What place is known as  "Roof of The World ?? </b> </div> <br>
+ <input id="answer" type="radio" name="group6" value="correct"> pamir <br> 
+ <input id="answer" type="radio" name="group6" value="wrong"> nepal <br>
+ <input id="answer" type="radio" name="group6" value="wrong"> mexico <br>
+ <input id="answer" type="radio" name="group6" value="wrong" > siera Leone  <br> <br> <br>
+ </ul>
+ 
+ 
+ 
+ <ul><div class="question"><b> 7) What is The smallest continent by land ??? </b> </div> <br> 
+  
+ <input id="answer" type="radio" name="group7" value="wrong"> Antartica <br>
+  <input id="answer" type="radio" name="group7" value="correct"> Australia <br>
+ <input id="answer" type="radio" name="group7" value="wrong"> Maldives  <br>
+ <input id="answer" type="radio" name="group7" value="wrong" > Colombia<br> <br> <br>
+ </ul>
+ 
+ 
+ <ul><div class="question"> <b> 8) In which coutry forbidden city is situated ??? </b> </div> <br>
+ <input id="answer" type="radio" name="group8" value="correct"> china <br> 
+ <input id="answer" type="radio" name="group8" value="wrong"> Malasia <br>
+ <input id="answer" type="radio" name="group8" value="wrong"> singapor <br>
+ <input id="answer" type="radio" name="group8" value="wrong" > Bangladesh <br> <br> <br>
+ </ul>
+ 
+ 
+ <ul><div class="question"> <b> 9) what is the currency of singapor ?? </b> </div> <br>
+  
+ <input id="answer" type="radio" name="group9" value="wrong"> Dollar <br>
+ <input id="answer" type="radio" name="group9" value="wrong"> murdi<br>
+ <input id="answer" type="radio" name="group9" value="wrong" > Pesu <br> 
+ <input id="answer" type="radio" name="group9" value="correct"> singapor dollar <br> <br> <br>
+ </ul>
+ 
+ 
+ <ul><div class="question"> <b> 10) What is the longest River in the world ?? </b> </div> 
+ <input id="answer" type="radio" name="group10" value="wrong"> Nile <br> 
+ <input id="answer" type="radio" name="group10" value="wrong">Missipie <br>
+ <input id="answer" type="radio" name="group10" value="correct"> Amazon <br>
+ <input id="answer" type="radio" name="group10" value="wrong" > Meghna <br> <br> <br>
+ </ul>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <button class="submit" onclick="return handleClick();" type="submit">Submit</button>
+ 
+ <input type="reset" value="Clear All"> 
+ </form> 
+ </body> </html>

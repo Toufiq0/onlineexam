@@ -1,0 +1,108 @@
+<html> <head> <title>Online Exam</title>
+ <script type="text/javascript"> 
+ function handleClick() 
+ { var amountCorrect = 0; 
+ for(var i = 1; i <= 200; i++) 
+ { var radios = document.getElementsByName('group'+i);
+ for(var j = 0; j < radios.length; j++) 
+ { var radio = radios[j]; 
+ if(radio.value == "correct" && radio.checked) { amountCorrect++; } } } alert("Correct Responses: " + amountCorrect);
+ } 
+ </script>
+ </head> 
+ <body> 
+ <form name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false">
+ 
+ 
+ <ul><div class="question"><b> 1) What is HTML stands for ???</div> </b> <br>
+ <input id="answer" type="radio" name="group1" value="wrong"> Hyper Text Mode Language <br> 
+ <input id="answer" type="radio" name="group1" value="wrong"> Hyper Text Markup Language <br>
+ <input id="answer" type="radio" name="group1" value="wrong"> Hyper Textual Markup Language <br> 
+ <input id="answer" type="radio" name="group1" value="correct"> Hyper Text Markup Language  <br> <br> <br>
+ </ul>
+ 
+ <ul><div class="question"> <b> 2)  What is use to design the Html file? </b> </div> <br>
+ <input id="answer" type="radio" name="group2" value="correct"> CSS <br>
+<input id="answer" type="radio" name="group2" value="wrong"> Laravel <br> 
+ <input id="answer" type="radio" name="group2" value="wrong"> PHP <br>
+ <input id="answer" type="radio" name="group2" value="wrong"> Java script <br> <br> <br>
+ 
+ </ul>
+ 
+ <ul><div class="question"> <b> 3) What is the extension of Css file ? </b> </div> <br>
+ 
+ <input id="answer" type="radio" name="group3" value="wrong"> .pl <br>
+ <input id="answer" type="radio" name="group3" value="wrong"> .exe <br>
+ <input id="answer" type="radio" name="group3" value="correct">.css <br> 
+ <input id="answer" type="radio" name="group3" value="wrong" >.bat <br> <br> <br>
+ 
+ </ul>
+ 
+ <ul><div class="question"><b> 4) What is the use of "Div" tag ? </b> </div> <br>
+ <input id="answer" type="radio" name="group4" value="wrong"> For Inheritance<br>
+ <input id="answer" type="radio" name="group4" value="correct"> for creating a division <br>
+ <input id="answer" type="radio" name="group4" value="wrong">  for connecting css <br> 
+ <input id="answer" type="radio" name="group4" value="wrong" > for Encryption <br> <br> <br>
+ </ul>
+ 
+ 
+ 
+ <ul><div class="question"> <b> 5) Can we use php file in html? </b> </div> <br>
+ <input id="answer" type="radio" name="group5" value="correct"> yes <br> 
+ <input id="answer" type="radio" name="group5" value="wrong"> no <br>
+ <input id="answer" type="radio" name="group5" value="wrong"> skip <br>
+ <input id="answer" type="radio" name="group5" value="wrong" >Not possible <br> <br> <br>
+ </ul>
+ 
+ <ul><div class="question"> <b>6) Can we only use the html to create basic website? </b> </div> <br>
+ <input id="answer" type="radio" name="group6" value="correct"> yes <br> 
+ <input id="answer" type="radio" name="group6" value="wrong"> partially impossible <br>
+ <input id="answer" type="radio" name="group6" value="wrong"> slightly possible <br>
+ <input id="answer" type="radio" name="group6" value="wrong" > impossible  <br> <br> <br>
+ </ul>
+ 
+ 
+ 
+ <ul><div class="question"> <b> 7) marquee is a tag of  </b> </div> <br>
+ <input id="answer" type="radio" name="group7" value="wrong"> PHP <br> 
+ <input id="answer" type="radio" name="group7" value="correct"> HTML <br>
+ <input id="answer" type="radio" name="group7" value="wrong"> Java  <br>
+ <input id="answer" type="radio" name="group7" value="wrongt" > None of the above <br> <br> <br>
+ </ul>
+ 
+ 
+ <ul><div class="question"> <b> 8)How many type of Css are there? </b> </div> <br>
+ <input id="answer" type="radio" name="group8" value="correct"> 2 <br> 
+ <input id="answer" type="radio" name="group8" value="wrong"> 3 <br>
+ <input id="answer" type="radio" name="group8" value="wrong"> 4 <br>
+ <input id="answer" type="radio" name="group8" value="wrong" > 5 <br> <br> <br>
+ </ul>
+ 
+ 
+ <ul><div class="question"> <b> 9)To create a table coloum diretly we have to use </b> </div> <br> 
+ <input id="answer" type="radio" name="group9" value="wrong"> td <br> 
+ <input id="answer" type="radio" name="group9" value="wrong"> tr <br>
+ <input id="answer" type="radio" name="group9" value="wrong"> div <br>
+ <input id="answer" type="radio" name="group9" value="correct" > none of the above <br> <br> <br>
+ </ul>
+ 
+ 
+ <ul><div class="question"> <b> 10)Where HTML files Loads when a HTML file is opened </b> </div> <br>
+ <input id="answer" type="radio" name="group10" value="correct"> browser <br> 
+ <input id="answer" type="radio" name="group10" value="wrong"> server <br>
+ <input id="answer" type="radio" name="group10" value="wrong"> physical layer <br>
+ <input id="answer" type="radio" name="group10" value="wrong" > none of the above <br> <br> <br>
+ </ul>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <button class="submit" onclick="return handleClick();" type="submit">Submit</button>
+ 
+ <input type="reset" value="Clear All"> 
+ </form> 
+ </body> </html>

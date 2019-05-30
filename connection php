@@ -1,0 +1,48 @@
+<?php
+$servername  = "localhost";
+$dbusername = "root";
+$dbpassword = "";
+$dbname = "authentication";
+
+$name = $_POST['email'];
+$email = $_POST['pass'];
+$message = $_POST['repass'];
+
+$conn = new mysqli($servername, $dbusername, $dbpassword, $dbname);
+
+if($conn->connect_error)
+{
+	die("Connection failed: " . $conn->connection_error);
+}
+
+if(empty($name)){
+	echo "Name can not be Blank. Please press back & fill the name";
+	die();
+	}
+if(empty($email)){
+	echo "Email can not be Blank. Please press back & fill the Email";
+	die();
+	}
+	
+if(empty($message)){
+	echo "Message can not be Blank. Please press back & fill the Message";
+	die();
+	}
+	
+$sql = "INSERT INTO `users` (`id`, `email`, `password`)
+VALUES ('$name', '$email', '$message')";
+
+if ($conn->query($sql) === TRUE)
+{
+echo "Thank you! Your Message hasbeen in database.";}
+else {
+ echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close(); 
+
+
+
+
+
+?>
